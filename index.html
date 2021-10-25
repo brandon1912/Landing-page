@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="main-body">
+            <br />
+            <div class="container shadow-lg second-body">
+                <br />
+                <!-- navbar starting -->
+                <nav>
+                    <a class="navbar-brand navbar-logo" href="#"><img src="images/logo.png" alt="" width="40" height="34" class="d-inline-block align-text-top" /> Startup Seed</a>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+
+                    <ul class="nav-menu">
+                        <li><a href="#" class="nav-links">Product</a></li>
+                        <li><a href="#" class="nav-links">Startup tools</a></li>
+                        <li><a href="#" class="nav-links">Features</a></li>
+                        <li><a href="#" class="nav-links">Live support</a></li>
+                        <li><a href="#" class="nav-links">Ours plans</a></li>
+                        <li><a href="#" class="nav-links">My account</a></li>
+                    </ul>
+
+                </nav>
+
+                <!-- script for navbar -->
+                <script>
+                    const hamburger = document.querySelector(".hamburger");
+                    const navMenu = document.querySelector(".nav-menu");
+
+                    hamburger.addEventListener("click", mobileMenu);
+
+                    function mobileMenu() {
+                        hamburger.classList.toggle("active");
+                        navMenu.classList.toggle("active");
+                    }
+                    const navLink = document.querySelectorAll(".nav-links");
+
+                    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+                    function closeMenu() {
+                        hamburger.classList.remove("active");
+                        navMenu.classList.remove("active");
+                    }
+                </script>
+                <!-- script for navbar -->
+                <!-- navbar ending -->
+                <!-- section starting -->
+                <section class="main-header">
+                    <div class="row w-100">
+                        <div class="col-lg-8">
+                            <div class="img text-center p-5">
+                                <img src="images/human.png" class="img-fluid w-100" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h1 class="first-heading">Seed Your</h1>
+                            <h1 class="first-heading pt-0">Startup</h1>
+                            <p style="font-size: 20px">
+                                All the resources you need for a successful start in one place
+                            </p>
+                            <button type="button" class="btn btn-dark">
+                                Get started today
+                            </button>
+                            <button type="button" class="btn text-white" style="background-color: rebeccapurple">
+                                Our plans
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- section ending -->
+                <!-- services starting -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6 img-responsive img-fluid" img-fluid>
+                                <img src="images/human2.png" />
+                            </div>
+                            <div class="col-lg-6 pt-5">
+                                <h3>Free live support</h3>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6 img-responsive img-fluid" img-fluid>
+                                <img src="images/human3.png" />
+                            </div>
+                            <div class="col-lg-6 pt-5">
+                                <h3>Building tools</h3>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6 img-responsive img-fluid" img-fluid>
+                                <img src="images/human4.png" />
+                            </div>
+                            <div class="col-lg-6 pt-5">
+                                <h3>Community support</h3>
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- services ending -->
+                    <!-- footer stating -->
+                    <footer class="pt-2">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fas fa-basketball-ball"></i></a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Other Projects</a></li>
+                            <li><a href="#">Help center</a></li>
+                        </ul>
+                    </footer>
+                    <p style="text-align: right; font-size: 20px"> ©Team AMOGUS - All rights reserved.</p>
+                    <!-- footer ending -->
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
